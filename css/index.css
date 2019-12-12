@@ -140,23 +140,26 @@ body {
   margin: 0 auto;
 }
 header {
-  height: 7vh;
-}
-header nav a {
-  float: right;
+  height: 3vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
 }
 header a {
-  padding-top: 2%;
   text-decoration: none;
-  color: black;
-  margin-left: 2%;
+  color: #A9A9A9;
+  font-size: 20px;
+  padding-left: 9%;
+}
+header nav {
+  width: 50%;
 }
 .intro {
-  background-color: lightgrey;
+  background-color: #FFDAB9;
   padding: 5% 3%;
 }
 .coder {
-  width: 40%;
+  width: 60%;
 }
 h1 {
   font-size: 50px;
@@ -166,14 +169,13 @@ h1 {
   padding-bottom: 2%;
 }
 .intro-para {
-  margin-top: 2%;
+  margin-top: 3%;
 }
 button {
-  background: grey;
+  background: #AFEEEE;
   border: 1px solid black;
   width: 14%;
   padding: 1%;
-  color: white;
   border-radius: 8px;
   margin-top: 3%;
 }
@@ -185,24 +187,36 @@ h3 {
 }
 .bot-out {
   display: flex;
-  justify-content: space-between;
-  background: red;
-  padding: 2% 0;
+  justify-content: space-evenly;
+  padding: 2%;
+  margin-top: 2%;
 }
 .bot-in {
   width: 50%;
-  background: green;
 }
 li {
-  padding: 2%;
+  padding: 3%;
   border: 1px solid grey;
 }
-.history {
-  background: teal;
+#work-history {
+  width: 100%;
+  border: 1px solid black;
+  padding: 8%;
+  margin-bottom: 2%;
+}
+#work-history td,
+#work-history th {
+  border: 1px solid grey;
+  padding: 1%;
+  text-align: center;
+}
+#work-history td {
+  color: #A9A9A9;
 }
 footer {
   background-color: grey;
   text-align: center;
   color: white;
   padding: 2% 4% 4%;
+  margin: 0 -1%;
 }
