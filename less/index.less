@@ -58,25 +58,35 @@ html, body {
 }
  
 // Code starts here
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 
 @main-color: #FFDAB9;
 @sub-main-color:#AFEEEE;
 @main-font: #A9A9A9;
+@main-font-fam: 'Quicksand', sans-serif;
+@sub-main-font-fam:'Dosis', sans-serif;
+
+.bordered(){
+	border: 1px dotted grey;
+}
+
 .container{
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
 }
 header{
-	height: 3vh;
+	height: 4vh;
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 5%;
 		a {
 			text-decoration: none;
-			color: @main-font;
+			color: @main-font; 
+			font-family: @main-font-fam;
 			font-size: 20px;
-			padding-left: 9%;
+			padding-left: 7%;
 	}// end of a
 		nav{
 			width: 50%;
@@ -86,6 +96,7 @@ header{
 .intro{
 	background-color: @main-color;
 	padding: 5% 3%;
+	font-family: @main-font-fam;
 }
 .coder {
 	width: 60%;
@@ -94,7 +105,7 @@ h1{
 	font-size: 50px;
 }
 .name{
-	border-bottom: 1px solid black;
+	.bordered();
 	padding-bottom: 2%;
 }
 .intro-para{
@@ -102,7 +113,7 @@ h1{
 }
 button{
 	background: @sub-main-color;
-	border: 1px solid black;
+	.bordered();
 	width: 14%;
 	padding: 1%;
 	border-radius: 8px;
@@ -122,22 +133,27 @@ h3{
 }
 .bot-in{
 	width: 50%;
+	font-family: @sub-main-font-fam;
+	padding: 1%;
 
 }
 li{
 	padding:3%;
-	border: 1px solid grey;
+	.bordered();
 }
 .history{
+	margin: 2%;
+	text-align: center;
+	font-family: @main-font-fam;
 }
 #work-history{
 	width: 100%;
 	border: 1px solid black;
 	padding: 8%;
-	margin-bottom: 2%;
+	margin: 2% 0;
 }
 #work-history td, #work-history th{
-	border: 1px solid grey;
+	.bordered();
 	padding: 1%;
 	text-align: center;
 }
@@ -150,4 +166,5 @@ footer{
 	color: white;
 	padding: 2% 4% 4%;
 	margin: 0 -1%;
+	font-family: @sub-main-font-fam;
 } 

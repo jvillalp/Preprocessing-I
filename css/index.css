@@ -134,13 +134,27 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-xw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v16/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 header {
-  height: 3vh;
+  height: 4vh;
   display: flex;
   justify-content: flex-end;
   margin-top: 5%;
@@ -148,8 +162,9 @@ header {
 header a {
   text-decoration: none;
   color: #A9A9A9;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  padding-left: 9%;
+  padding-left: 7%;
 }
 header nav {
   width: 50%;
@@ -157,6 +172,7 @@ header nav {
 .intro {
   background-color: #FFDAB9;
   padding: 5% 3%;
+  font-family: 'Quicksand', sans-serif;
 }
 .coder {
   width: 60%;
@@ -165,7 +181,7 @@ h1 {
   font-size: 50px;
 }
 .name {
-  border-bottom: 1px solid black;
+  border: 1px dotted grey;
   padding-bottom: 2%;
 }
 .intro-para {
@@ -173,7 +189,7 @@ h1 {
 }
 button {
   background: #AFEEEE;
-  border: 1px solid black;
+  border: 1px dotted grey;
   width: 14%;
   padding: 1%;
   border-radius: 8px;
@@ -193,20 +209,27 @@ h3 {
 }
 .bot-in {
   width: 50%;
+  font-family: 'Dosis', sans-serif;
+  padding: 1%;
 }
 li {
   padding: 3%;
-  border: 1px solid grey;
+  border: 1px dotted grey;
+}
+.history {
+  margin: 2%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 #work-history {
   width: 100%;
   border: 1px solid black;
   padding: 8%;
-  margin-bottom: 2%;
+  margin: 2% 0;
 }
 #work-history td,
 #work-history th {
-  border: 1px solid grey;
+  border: 1px dotted grey;
   padding: 1%;
   text-align: center;
 }
@@ -219,4 +242,5 @@ footer {
   color: white;
   padding: 2% 4% 4%;
   margin: 0 -1%;
+  font-family: 'Dosis', sans-serif;
 }
