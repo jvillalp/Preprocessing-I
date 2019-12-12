@@ -70,6 +70,10 @@ html, body {
 .bordered(){
 	border: 1px dotted grey;
 }
+.centered(){
+	display:flex;
+	justify-content:center;
+}
 
 .container{
 	max-width: 800px;
@@ -81,36 +85,58 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 5%;
-		a {
-			text-decoration: none;
-			color: @main-font; 
-			font-family: @main-font-fam;
-			font-size: 20px;
-			padding-left: 7%;
+	a{
+	text-decoration: none;
+	color: @main-font; 
+	font-family: @main-font-fam;
+	font-size: 20px;
+	padding-left: 7%;
 	}// end of a
 		nav{
-			width: 50%;
+		width: 50%;
 		}//end of nav
+		@media(max-width: 500px){
+			a{
+			padding-left: 3%;
+			}//end of a 500px
+			nav{
+			width:80%;
+			}//end of nav 500px
+		}// end of media 500px
 }// end of header
 
 .intro{
 	background-color: @main-color;
 	padding: 5% 3%;
 	font-family: @main-font-fam;
-}
+	@media(max-width: 500px){
+			padding: 2%;
+			margin: 1%;
+	}//end of media 500 px
+} // end of intro
 .coder {
 	width: 60%;
-}
+	@media(max-width: 500px){
+	width: 100%;
+		}//end of media 500px
+}//end of coder
 h1{
 	font-size: 50px;
 }
 .name{
 	.bordered();
 	padding-bottom: 2%;
-}
+	@media(max-width: 500px){
+		text-align: center;
+	}//end of media 500px
+}//end of name
+
 .intro-para{
 	margin-top: 3%;
-}
+	@media(max-width: 500px){
+		text-align: center;
+	} //end of into part 500px
+}//end of intro-part
 button{
 	background: @sub-main-color;
 	.bordered();
@@ -118,6 +144,9 @@ button{
 	padding: 1%;
 	border-radius: 8px;
 	margin-top: 3%;
+	@media(max-width: 500px){
+		width: 100%;
+	}
 }
 h2{
 	font-size: 30px;
@@ -130,12 +159,20 @@ h3{
 	justify-content: space-evenly;
 	padding:2%;
 	margin-top: 2%;
-}
+	@media(max-width: 500px){
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	} //end of media 500px
+}//end of box-out
 .bot-in{
 	width: 50%;
 	font-family: @sub-main-font-fam;
 	padding: 1%;
-
+	@media(max-width: 500px){
+		width: 80%;
+		text-align: center;
+	}
 }
 li{
 	padding:3%;
@@ -167,4 +204,5 @@ footer{
 	padding: 2% 4% 4%;
 	margin: 0 -1%;
 	font-family: @sub-main-font-fam;
+	.centered();
 } 
